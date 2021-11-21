@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style>
+         html{
+    background: #000000;
+    margin-top: 50px;     
+}
+.container{
+    background: #000000;
+}
+ 
+.our-team{
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px 15px 30px;
+    background: rgb(224, 221, 221);
+
+}
+.our-team .pic{
+    margin-bottom: 25px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease 0s;
+    clip-path: circle();
+}
+.pic img{
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+.our-team .title{
+    font-weight: 600;
+    color: #2e282a;
+    text-transform: uppercase;
+    display: block;
+    font-size: 20px;
+    margin: 0 0 7px 0;
+}
+.our-team .post{
+    color: #8f8a8a;
+    text-transform: capitalize;
+    display: block;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.our-team .social{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.our-team .social li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.our-team .social li a{
+    border-radius: 50%;
+    font-size: 15px;
+    color: #3f80e0;
+    border: 1px solid #17bebb;
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .social li a{
+    background: #17bebb;
+    color: #fff;
+}
+.our-team:hover .pic{
+    background: #17bebb;
+    border-radius: 50%;
+}
+.our-team:hover{
+    transform: translate(0,-7px);
+}
+.container h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.container h1{
+    position: relative;
+    padding: 0px 0px 15px;
+}
+.container h1::after {
+    content: '';
+    border-bottom: 2px solid red;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    width: 130px;
+    margin: 0 auto;
+    display: block;
+}
+    </style>
+</head>
+<body style="background: black;">
+    <div class="container">
+        <h1>OUR TEAM</h1>
+        <div class="row">
+                 <!--1st member-->
+<div class="col-md-3 col-sm-6">
+    <div class="our-team">
+        <div class="pic">
+            <img src="keerthi.jpg">
+        </div>
+        <h3 class="title">Keerthi G</h3>
+        <span class="post">Founder of this Web site, and also Web Developer 
+            pursuing a Bachelor's degree in Computer Science and Engineering
+            at Vivekananda College of Engineering and Technology, Puttur.</span>
+        <ul class="social">
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="https://twitter.com/Keerthi30159372?s=08" target="_blank" class="fa fa-twitter"></a></li>
+            <li><a href="mailto: keerthig12345@gmail.com" class="fa fa-envelope fa-2x"></a></li>
+            <li><a href="https://instagram.com/mr_keerthi__nayak?utm_medium=copy_link" target="_blank" class="fa fa-instagram"></a></li>
+     </ul>
+    </div>
+</div>
+<!--2nd member-->
+<div class="col-md-3 col-sm-6">
+    <div class="our-team">
+        <div class="pic">
+            <img style="height: 145px; width: 145px; clip-path: circle();" src="shashank.jpg">
+        </div>
+        <h3 class="title">Shashank Rao P</h3>
+        <span class="post">Web Developer, App Developer and Graphics Developer.
+            pursuing a Bachelor's degree in Computer Science and Engineering
+            at Vivekananda College of Engineering and Technology, Puttur.
+        </span>
+
+        <ul class="social">
+            <li><a href="https://www.facebook.com/shashank.raop" target="_blank" class="fa fa-facebook"></a></li>
+            <li><a href="https://twitter.com/SHASHANKRAOP4?s=09" target="_blank" class="fa fa-twitter"></a></li>
+            <li><a href="https://youtu.be/bAfs4TjSAe8" target="_blank" class="fa fa-youtube"></a></li>
+            <li><a href="https://instagram.com/shashank__rao__p?utm_medium=copy_link" target="_blank" class="fa fa-instagram"></a></li>
+     </ul>
+    </div>
+</div>
+<!--3rd member-->
+<div class="col-md-3 col-sm-6">
+    <div class="our-team">
+        <div class="pic">
+            <img style="height: 145px; width: 145px; clip-path: circle();" src="samiksha.JPG">
+        </div>
+        <h3 class="title">Samiksha B</h3>
+        <span class="post">Web Designer and workspace admin of This team.
+            pursuing a Bachelor's degree in Computer Science and Engineering
+            at Vivekananda College of Engineering and Technology, Puttur.
+        </span>  
+        <ul class="social">
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-twitter"></a></li>
+            <li><a href="#" class="fa fa-google-plus"></a></li>
+            <li><a href="https://instagram.com/sam_suvarna_9?utm_medium=copy_link" target="_blank" class="fa fa-instagram"></a></li>
+     </ul>
+    </div>
+</div>
+<!--4th member-->
+<div class="col-md-3 col-sm-6">
+    <div class="our-team">
+        <div class="pic">
+            <img style="height: 145px; width: 145px; clip-path: circle();" src="Thrisha.jpg">
+        </div>
+        <h3 class="title">Thrisha B Bhat</h3>
+        <span class="post">Web Designer and workspace admin of This team.
+            pursuing a Bachelor's degree in Computer Science and Engineering
+            at Vivekananda College of Engineering and Technology, Puttur.
+        </span>
+
+        <ul class="social">
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-twitter"></a></li>
+            <li><a href="#" class="fa fa-google-plus"></a></li>
+            <li><a href="https://instagram.com/thrisha_bhat?utm_medium=copy_link" target="_blank" class="fa fa-instagram"></a></li>
+     </ul>
+    </div>
+</div>
+        </div>
+    </div>
+</body>
+</html>
+
