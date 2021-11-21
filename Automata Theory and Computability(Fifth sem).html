@@ -1,0 +1,424 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>VCET Puttur</title>
+    <link rel="shortcut icon" type="image/jpg" href="logo.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/267642aed8.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,200;1,300;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="style.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <style>
+        @media(max-width: 700px){
+            .course h1{
+                font-size: 30px;      
+             }
+            .facilities h1{
+                font-size: 30px;
+            }
+            .testimonials h1{
+                font-size: 30px;
+            }
+        }
+        
+        * {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'PT Sans',sans-serif;
+
+}
+
+@media(max-width:700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+@media(max-width:700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+/*----------------------------------------------*/
+
+@media(max-width: 700px) {
+    .testimonial-col img {
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width:700px) {
+    footer .footer-cols{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(3,1fr); /*fr-fractional unit*/
+        padding-top: 2rem;
+        text-align: left;
+        font-size: 12.5px;
+        padding-left: 2rem;
+    }
+    .footerlogo img{
+        display: none;
+    }
+    .bhoomika .footer-title ul li{
+        font-size: 10px;
+    }
+    footer .bottom-color .footer-cols ul .bhoomika li{
+        font-size: 15px;
+    }
+    footer .bottom-color .footer-cols ul .otherslink li{
+        font-size: 18.5px;
+    } 
+    footer .bottom-color .footer-cols ul .departments li{
+        font-size: 18px;
+    } 
+    #sociallink{
+        padding-top: 2rem;
+        padding-left: 5rem;
+    }
+}
+
+    @media (max-width:700px){
+            .text-box h1{
+                font-size: 30px;
+            }
+            #paragraphheading{
+                font-size: 12px;
+            }
+            #about_section h1{
+                font-size: 25px;
+                padding-top: 1.5rem;
+            }
+            #about_section li{
+                font-size: 8px;
+                padding-right: 200px;
+                max-width: fit-content;
+                padding-left: 0rem;
+            }
+            #about_section summary{
+                font-size: 11px;
+            }
+            .facilities h1{
+                font-size: 25px;
+                padding-bottom: 20px;
+            }
+            .testimonials h1{
+                font-size: 20px;
+                padding-bottom: 25px;
+            }
+            .ourteamcontainer h1{
+                font-size: 25px;
+            }
+            .col-md-3 {
+                padding-bottom: 20px;
+            }
+            #ourteamsection{
+                padding-top: 90px;
+            }
+            .containers .containerborder .rewardrow .counter{
+                font-size: 30px;
+            }
+            .containers .containerborder .rewardrow .name{
+                font-size: 11px;
+            }
+            .containers .containerborder .rewardrow{
+                column-gap: 50px;
+                padding-left: 1rem;
+            }
+            .containers .containerborder .rewardsrow .counter{
+                font-size: 30px;
+            }
+            .containers .containerborder .rewardsrow .name{
+                font-size: 11px;
+            }
+            .containers .containerborder .rewardsrow{
+                column-gap: 50px;
+                padding-left: 1rem;
+            }
+            .testimonials h1{
+                font-size: 28px;
+            }
+        }
+         
+      .container a{
+        max-width: 12000px;
+        margin: auto;
+        background: #f2f2f2;
+        overflow: auto;
+        background-color:#252529 ;
+        padding-left: 6rem;
+        padding-bottom: 2rem;
+    }
+    
+    .header {
+    min-height: 80vh;
+    width: 100%;
+    background:linear-gradient(rgba(20, 21, 22, 0.7),rgba(17, 18, 24, 0.7)), url(vcet.jfif) no-repeat center/cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+    </style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="logo.png" /></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="programs.html">PROGRAMS</a></li>
+                    <li><a href="Aboutus.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="address.html">ADDRESS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1 id="mainheading">VCET Puttur</h1>
+                    <!-- <p id="smallheading"> Best place to visualize, enjoy & learn</p> -->
+                    <p id="paragraphheading">“In a day, when you don’t come across any problems – you can be sure that you are travelling in a wrong path” – Swami Vivekananda</p>
+        </div>
+    </section>
+   
+
+
+
+
+    <div class="questionpaperborder" style="padding-bottom: 1.5rem;">
+        <!--  <div class="boxsetup"><div class="box">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input type="text" placeholder="Search here
+          " name="">
+          </div></div>
+         <div style="font-size: 0.7rem; color: red;"><p><i>*Note : This website under development.So search button is not working</i></p></div>
+         <h1 class="k">Welcome to my website</h1>
+    
+         <div style="padding-bottom: 2rem;">
+          <nav class="cr">
+          <ul class="c">
+              <li>
+                  <pre><h2><a href="ENGINEERING PHYSICS QUESTION PAPERS (18PHY12).html">                                         ENGINEERING PHYSICS QUESTION PAPERS (18PHY12)                      </a></h2></pre>     
+              </li>
+              <li>
+                  <pre><h2><a href="BASIC ELECTRICAL QUESTION PAPERS (18ELE13).html">                                         BASIC ELECTRICAL QUESTION PAPERS (18ELE13)                         </a></h2></pre>     
+              </li>
+              <li>
+                  <pre><h2><a href="ELEMENTS OF CIVIL ENGINEERING QUESTION PAPER(18CIV14).html">                                         ELEMENTS OF CIVIL ENGINEERING QUESTION PAPER(18CIV14)              </a></h2></pre>     
+              </li>
+              <li>
+                  <pre><h2><a href="MATHS(18MAT11) QUESTION PAPERS.html">                                         MATHS(18MAT11) QUESTION PAPERS                                     </a></h2></pre>     
+              </li>
+              <li>
+                  <pre><h2><a href="ENGINEERING GRAPHICS(18EGDL15).html">                                         ENGINEERING GRAPHICS(18EGDL15)                                     </a></h2></pre>     
+              </li>
+              <li>
+                  <pre><h2><a href="TECHNICAL ENGLISH-1 QUESTION PAPER (18EGH18).html">                                         TECHNICAL ENGLISH-1 QUESTION PAPER (18EGH18)                       </a></h2></pre>     
+              </li>
+              <li>
+                  <pre><h2><a href="ELECTRICAL LAB VIDEOS (18ELEL17).html">                                         ELECTRICAL LAB VIDEOS (18ELEL17)                                   </a></h2></pre>     
+              </li>
+              <li>
+                  <pre><h2><a href="PHYSICS LAB VIDEOS (18PHYL16).html">                                         PHYSICS LAB VIDEOS (18PHYL16)                                      </a></h2></pre>     
+              </li>
+              <li>
+                  <pre><h2><a href="C PROGRAMING QUESTION PAPER(18CPS23).html">                                         C PROGRAMING QUESTION PAPER(18CPS23)                               </a></h2></pre>
+              </li>
+              <li>
+                  <pre><h2><a href="BASIC ELECTRONICS QUESTION PAPER(18ELN24).html">                                         BASIC ELECTRONICS QUESTION PAPER(18ELN24)                          </a></h2></pre>     
+              </li>
+              <li>
+                  <pre><h2><a href="ENGINEERING CHEMISTRY QUESTION PAPER(18CHE22).html">                                         ENGINEERING CHEMISTRY QUESTION PAPER(18CHE22)                      </a></h2></pre>     
+              </li>
+              <li>
+                  <pre><h2><a href="ELEMENTS OF MECHANICAL ENGINEERING QUESTION PAPER(18ME25).html">                                         ELEMENTS OF MECHANICAL ENGINEERING QUESTION PAPER(18ME25)          </a></h2></pre>     
+              </li>
+              <li>
+                  <pre><h2><a href="MATHS(18MAT21) QUESTION PAPER.html">                                         MATHS(18MAT21) QUESTION PAPER                                      </a></h2></pre>     
+              </li>
+              <li>
+                  <pre><h2><a href="TECHNICAL ENGLISH-2 QUESTION PAPER(18EGH28).html">                                         TECHNICAL ENGLISH-2 QUESTION PAPER(18EGH28)                        </a></h2></pre>     
+              </li>
+     </div> -->
+    
+      <!-- <div style="padding-bottom: 1rem;"> -->
+      <section style="max-width: 1100px;padding-left: 2rem;padding-top: 3rem;padding-bottom: 3rem;" id="ENGINEERING PHYSICS QUESTION PAPERS (18PHY12)" class="section">
+         <a href="POWER ELECTONICS AND INFORMATION(Third sem).html" ><div class="container2">
+              <h1 style="padding-bottom: 2rem;padding-top: 1rem;">Automata Theory and Computability(Fifth sem):</h1>
+              <p class="text"><b>IA1-5CS-AUTOMATA THEORY AND COMPUTABILITY</b></p>
+              <a class="hello" href="IA1-5CS-AUTOMATA THEORY AND COMPUTABILITY.pdf" target="_blank" download>
+                  Download
+              </a>
+              <p class="text"><b>IA2-5CS-AUTOMATA THEORY AND COMPUTABILITY(17CS54)</b></p>
+              <a class="hello" href="IA2-5CS-AUTOMATA THEORY AND COMPUTABILITY(17CS54).pdf" download target="_blank">
+                  Download
+             </a>
+             <p class="text"><b>IA3-AUTOMATA THEORY & COMPUTABILTY</b></p>
+              <a class="hello" href="IA3-AUTOMATA THEORY & COMPUTABILTY.pdf" download target="_blank">
+                  Download
+             </a>
+             <p class="text"><b>Automata theory and compuatability-January-February-2021</b></p>
+              <a class="hello" href="Automata theory and compuatability-January-February-2021.pdf" download target="_blank">
+                  Download
+             </a>
+             <p class="text"><b>Automata theory and computability-July-August-2021</b></p>
+              <a class="hello" href="Automata theory and computability-July-August-2021.pdf" download target="_blank">
+                  Download
+             </a>
+             <!-- <p class="text"><b>IA-3-ENGINEERING-PHYSICS-2019</b></p>
+              <a class="hello" href="IA32019.pdf" download target="_blank">
+                  Download
+             </a>
+             <p class="text"><b>ENGINEERING-PHYSICS-2021</b></p>
+              <a class="hello" href="PHY2021.pdf" download target="_blank">
+                  Download
+             </a>
+             <p class="text"><b>ENGINEERING-PHYSICS-2018-2019</b></p>
+              <a class="hello" href="PHY2018-19.pdf" download target="_blank">
+                  Download
+             </a>
+             <p class="text"><b>ENGINEERING-PHYSICS-2019-2020</b></p>
+              <a class="hello" href="PHY2019-20.pdf" download target="_blank">
+                  Download
+             </a>
+             <p class="text"><b>ENGINEERING-PHYSICS-2019</b></p>
+              <a class="hello" href="PHY2019.pdf" download target="_blank">
+                  Download
+             </a>
+             <p class="text"><b>QUESTION-BANK-PHYSICS</b></p>
+              <a class="hello" href="QUESTIONBANK.pdf" download target="_blank">
+                  Download
+             </a>
+             <p class="text"><b>VTU-QP-Problems-Physics-1sem-2020-2021</b></p>
+              <a class="hello" href="VTUQP.pdf" download target="_blank">
+                  Download
+             </a>
+             <p class="text"><b>IA-1-ENGINEERING-PHYSICS-June-2021</b></p>
+              <a class="hello" href="IA1JUNE2021.pdf" download target="_blank">
+                  Download
+             </a>
+             <p class="text"><b>IA-2-ENGINEERING-PHYSICS-Aug-Sep-2021</b></p>
+              <a class="hello" href="PHYIA2sep2021.pdf" download target="_blank">
+                  Download
+              </a>
+              <p class="text"><b>IA-3-ENGINEERING-PHYSICS-Sep-2021</b></p>
+              <a class="hello" href="PHY-IA3sep2021.pdf" download target="_blank">
+                  Download
+             </a> -->
+          </div>
+      </section>
+      </div>
+
+
+ <!-- Footer section -->
+ <section>
+    <footer>
+        <div class="bottom-color">
+            <div class="footer-cols">
+                <ul>
+                    <div class="departments"><li class="footer-title">Departments</li></div>
+                    <li> <a target="_blank" href="https://vcetputtur.ac.in/ug-department/computer-science-and-engineering"> Computer Science & Engineering </a></li>
+                    <li><a target="_blank" href="https://vcetputtur.ac.in/ug-department/electronics-and-communication-engineering">Electronics & Communication Engineering</a></li>
+                    <li><a target="_blank" href="https://vcetputtur.ac.in/ug-department/mechanical-engineering">Mechanical Engineering</a></li>
+                    <li><a target="_blank" href="https://vcetputtur.ac.in/ug-department/civil-engineering">Civil Engineering</a></li>
+                    <li><a target="_blank" href="https://vcetputtur.ac.in/ug-department/department-of-mathematics">Mathematics</a></li>
+                    <li><a target="_blank" href="https://vcetputtur.ac.in/ug-department/department-of-physics">Physics</a></li>
+                    <li><a target="_blank" href="https://vcetputtur.ac.in/ug-department/department-of-chemistry">Chemistry</a></li>
+                    <li><a target="_blank" href="https://vcetputtur.ac.in/ug-department/department-of-physical-education">Physical Education</a></li>
+                </ul>
+                <ul>
+                    <div class="otherslink"><li class="footer-title">Other Links</li></div>
+                    <li><a target="_blank" href="https://cells.vcetputtur.ac.in/">Cells - VCET - Puttur</a></li>
+                    <li><a target="_blank" href="https://instagram.com/vcet_puttur_official?utm_medium=copy_link">VCET - Official - Instagram</a></li>
+                    <li><a target="_blank" href="https://youtu.be/5Huu9_zTOSw">Chilume Spoof 1 st B.E</a></li>
+                    <li><a target="_blank" href="https://youtube.com/channel/UCTQlL4HvrOZxxW1m_X5MQ3Q">VCET-Connect</a></li>
+                </ul>
+                <ul>
+                    <div class="bhoomika"><li class="footer-title">Bhoomika Kala Sangha</li></div>
+                    <li><a target="_blank" href="https://youtu.be/gFsVwLuu8pk">A - Section</a></li>
+                    <li><a target="_blank" href="https://youtu.be/EOuAQmMtet4">B - Section</a></li>
+                    <li><a target="_blank" href="https://youtu.be/b-tb2bzHnsI">C - Section</a></li>
+                    <li><a target="_blank" href="https://youtu.be/VbWcfz4BTZ0">D- Section</a></li>
+                    <li><a target="_blank" href="https://youtu.be/1KTaaVxwJHY">E - Section</a></li>
+                    <li><a target="_blank" href="https://youtu.be/Y4_dTX-xoC0">F - Section</a></li>
+                </ul>
+                <ul class="footerlogo">
+                    <img style="width: 270px;clip-path: circle();padding-right:3rem;" src="logo.png">
+                </ul>
+            </div>
+            <div id="sociallink" class="social-links">
+                <a style="color: #3b5998; box-shadow: 0 0 3px 0px #3b5998" target="_blank" href="https://www.facebook.com/vcetputtur/"><i class="fab fa-facebook-f"></i></a>
+                <a style="color:#fbad50; box-shadow: 0 0 3px 0px #fbad50" target="_blank" href="https://instagram.com/vcet_puttur_official?utm_medium=copy_link"><i class="fab fa-instagram"></i></a>
+                <a style="color: #00acee; box-shadow: 0 0 3px 0px #00acee;" target="_blank" href="https://twitter.com/vcetputtur?s=09"><i class="fab fa-twitter"></i></a>
+                <a style="color:#FF0000; box-shadow: 0 0 3px 0px #FF0000;" target="_blank" href="https://www.youtube.com/channel/UC672CYi4HBxMlf6N38oonNQ"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div id="footerbottom" class="footer-bottom">
+            Copyright &copy;2021 VCET 
+            <div id="madewithname"> Made with <i style="color: red;" class="fa fa-heart"></i> D Technology</div>
+        </div>
+    </footer>
+</section>
+
+
+
+
+
+    <!----------JavaScript for Toggle Menu------->
+    <script src="jquery.counterup.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="jquery.counterup.min.js"></script>
+    <script>
+
+        //Navigation bar handling
+var navLinks = document.getElementById("navLinks");
+function showMenu() {
+    navLinks.style.right = "0";
+}
+function hideMenu() {
+    navLinks.style.right = "-200px";
+}
+
+    </script>
+
+</body>
+</html>
