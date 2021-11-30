@@ -589,12 +589,12 @@ footer .footer-cols ul li:first-child{
 #address{
     padding-bottom: 0.5rem;
 }
-#addressheading{
+/* #addressheading{
     font-size: 2.5rem;font-size:2rem;content: '';
     border-bottom: 2px solid red;
     width: 180px;
     margin: auto;padding-top: 2rem;
-}
+} */
 #adressdiv1{
     padding-top: 2rem;
 }
