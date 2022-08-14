@@ -948,8 +948,324 @@
 
 
 
+
+
+
+<!-- Our Team section -->
+
+  <section id="ourteamsection" class="ourteamcontainer">
+ <h1>OUR TEAM</h1>
+<link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+<section class="carousel" id="carousel">
+    <style>
+            @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap");
+body {
+  font-family: "Chakra Petch", sans-serif;
+}
+.carousel__wrapper {
+  padding: 20px;
+}
+.carousel__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.carousel__container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  column-gap: 0px;
+  align-items: center;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+.carousel__container::-webkit-scrollbar {
+  display: none;
+}
+.carousel__slide {
+  min-width: 100%;
+}
+.arrow {
+  display: none;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: calc(50% - 10px);
+  background-color: rgba(3, 101, 214, 0.664);
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.arrow i {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.arrow.arrow--right {
+  right: 0%;
+}
+.arrow.arrow--left {
+  left: 0%;
+}
+
+@media screen and (min-width: 1180px) {
+  .carousel__wrapper {
+    padding: 50px;
+  }
+  .carousel__slide {
+    min-width: 33.33%;
+    scroll-snap-align: center;
+    position: relative;
+  }
+  .arrow {
+    display: flex;
+  }
+}
+
+/*our team section*/
+
+.ourteamcontainer{
+    /* background: #000000;  */
+    padding-top: 0.5rem;
+    padding-bottom: 3rem;
+    /* border: #444 solid 2px; */
+}
+/* .row{
+	display:flex;
+	column-gap:20px;
+	padding: 0px 20px 30px;
+} */
+ 
+.our-team{
+    border-radius: 15px;
+    text-align: center;
+	cursor: pointer;
+  width: 89%;
+    padding: 20px 15px 30px;
+    background: rgb(224, 221, 221);
+}
+.our-team .pic{
+    /* background: #fff; */
+    /* padding: 50px; */
+    margin-bottom: 25px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease 0s;
+    clip-path: circle();
+}
+.pic img{
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+.our-team .title{
+    font-weight: 600;
+    color: #2e282a;
+    text-transform: uppercase;
+    display: block;
+    font-size: 20px;
+    margin: 0 0 7px 0;
+}
+.our-team .post{
+    color: #8f8a8a;
+    text-transform: capitalize;
+    display: block;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.our-team .social{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.our-team .social li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.our-team .social li a{
+    border-radius: 50%;
+    font-size: 15px;
+    color: #3f80e0;
+    border: 1px solid #17bebb;
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .social li a{
+    background: #17bebb;
+    color: #fff;
+}
+.our-team:hover .pic{
+    background: red;
+    border-radius: 50%;
+}
+.our-team:hover{
+    transform: translate(0,-7px);
+    /* transform: scale(1.07); */
+    transition: 0.4s;
+}
+.ourteamcontainer h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 30px;
+}
+.ourteamcontainer h1{
+    position: relative;
+    padding: 0px 0px 15px;
+}
+.ourteamcontainer h1::after {
+    content: '';
+    border-bottom: 2px solid red;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+    </style>
+  <div class="carousel__wrapper">
+    <div>
+      <div class="carousel__content">
+        <div class="carousel__container">
+          <div class="carousel__slide">
+            <div class="our-team">
   
-    <section id="ourteamsection" class="ourteamcontainer">
+              <div class="pic">
+                  <img id="teampickeerthi" src="keerthi.jpg">
+              </div>
+      
+              <h3 class="title">Keerthi G</h3>
+              <span class="post" style="font-size:15px ;">Founder of this Web site, and also Web Developer 
+                  pursuing a Bachelor's degree in Computer Science and Engineering
+                  at Vivekananda College of Engineering and Technology, Puttur.</span>
+      
+              <ul class="social">
+                  <li><a href="https://github.com/keerthi2911" target="_blank" class="fa fa-github fa-2x"></a></li>
+                  <li><a href="https://twitter.com/Keerthi30159372?s=08" target="_blank" class="fa fa-twitter"></a></li>
+                  <li><a href="mailto: keerthig12345@gmail.com" class="fa fa-envelope fa-2x"></a></li>
+                  <li><a href="https://instagram.com/mr_keerthi__nayak?utm_medium=copy_link" target="_blank" class="fa fa-instagram"></a></li>
+           </ul>
+          </div>
+          </div>
+
+
+          <div class="carousel__slide">
+            <div class="our-team">
+              <div class="pic">
+                  <img id="teampicsamiksha"  src="sameeksha.jpg">
+              </div>
+              <h3 class="title">Samiksha B</h3>
+              <span class="post">Web Designer and workspace admin of This team.
+                  pursuing a Bachelor's degree in Computer Science and Engineering
+                  at Vivekananda College of Engineering and Technology, Puttur.
+              </span>  
+              <ul class="social">
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="https://twitter.com/B5Samiksha?s=03" target="_blank" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-google-plus"></a></li>
+                  <li><a href="https://instagram.com/sam_suvarna_9?utm_medium=copy_link" target="_blank" class="fa fa-instagram"></a></li>
+           </ul>
+          </div>
+          </div>
+
+
+          <div class="carousel__slide">
+            <div class="our-team">
+              <div class="pic">
+                  <img id="teampicshashank"  src="shashank.jpg">
+              </div>
+              <h3 class="title">Shashank Rao P</h3>
+              <span class="post">Web Developer and App Developer.
+                  pursuing a Bachelor's degree in Computer Science and Engineering
+                  at Vivekananda College of Engineering and Technology, Puttur.
+              </span>
+      
+              <ul class="social">
+                  <li><a href="https://www.facebook.com/shashank.raop" target="_blank" class="fa fa-facebook"></a></li>
+                  <li><a href="https://twitter.com/SHASHANKRAOP4?s=09" target="_blank" class="fa fa-twitter"></a></li>
+                  <li><a href="https://www.linkedin.com/in/shashank-rao-p-463160213/" target="_blank" class="fa fa-linkedin"></a></li>
+                  <li><a href="https://instagram.com/shashank__rao__p?utm_medium=copy_link" target="_blank" class="fa fa-instagram"></a></li>
+           </ul>
+          </div>
+          </div>
+
+
+          <div class="carousel__slide">
+            <div class="our-team">
+              <div class="pic">
+                  <img id="teampicthrisha" src="Thrisha.jpg">
+              </div>
+              <h3 class="title">Thrisha B Bhat</h3>
+              <span class="post">Web Designer and workspace admin of This team.
+                  pursuing a Bachelor's degree in Computer Science and Engineering
+                  at Vivekananda College of Engineering and Technology, Puttur.
+              </span>
+      
+              <ul class="social">
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-google-plus"></a></li>
+                  <li><a href="https://instagram.com/thrisha_bhat?utm_medium=copy_link" target="_blank" class="fa fa-instagram"></a></li>
+           </ul>
+          </div>
+          </div>
+
+
+
+
+          <div class="carousel__slide">
+            <div class="our-team">
+              <div class="pic">
+                  <img id="teampickeerthi" src="harshitha.jpg">
+              </div>
+              <h3 class="title">Harshitha K</h3>
+              <span class="post">Web Designer and workspace admin of This team.
+                pursuing a Bachelor's degree in Computer Science and Engineering
+                at Vivekananda College of Engineering and Technology, Puttur.</span>
+      
+              <ul class="social">
+                <li><a href="https://github.com/sampleharvgithub" target="_blank" class="fa fa-github fa-2x"></a></li>
+                <li><a href="https://www.facebook.com/harshitha.suvarna.908" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-google-plus"></a></li>
+                  <li><a href="https://instagram.com/harshiii.suvarna?igshid=YmMyMTA2M2Y=" target="_blank" class="fa fa-instagram"></a></li>
+           </ul>
+          </div>
+          </div>
+        </div>
+        <div id="prev-slide" class="arrow arrow--left">
+          <i class="bx bx-chevron-left"></i>
+        </div>
+        <div id="next-slide" class="arrow arrow--right">
+          <i class="bx bx-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Our team section -->
+  
+<!--     <section id="ourteamsection" class="ourteamcontainer">
         <h1>OUR TEAM</h1>
     <style>
         *{
@@ -1112,12 +1428,11 @@
       </div>
   </div>  
       
-<!--       <div id="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div> -->
      </div>
 
 
 
-</section>
+</section> -->
 
 
 
@@ -1321,36 +1636,139 @@ function showSlides() {
         
         
 
-var index = 0;
-var slides = document.querySelectorAll(".slides");
-var dot = document.querySelectorAll(".dot");
+// var index = 0;
+// var slides = document.querySelectorAll(".slides");
+// var dot = document.querySelectorAll(".dot");
 
-function changeSlide(){
+// function changeSlide(){
 
-  if(index<0){
-    index = slides.length-1;
-  }
+//   if(index<0){
+//     index = slides.length-1;
+//   }
   
-  if(index>slides.length-1){
-    index = 0;
-  }
+//   if(index>slides.length-1){
+//     index = 0;
+//   }
   
-  for(let i=0;i<slides.length;i++){
-    slides[i].style.display = "none";
-    dot[i].classList.remove("active");
-  }
+//   for(let i=0;i<slides.length;i++){
+//     slides[i].style.display = "none";
+//     dot[i].classList.remove("active");
+//   }
   
-  slides[index].style.display= "block";
-  dot[index].classList.add("active");
+//   slides[index].style.display= "block";
+//   dot[index].classList.add("active");
   
-  index++;
+//   index++;
   
-  setTimeout(changeSlide,3000);
+//   setTimeout(changeSlide,3000);
   
+// }
+
+// changeSlide();
+  
+        
+        
+        
+        
+        
+        
+        
+ /*--------------------------------------------------------
+    Set carousel config here
+
+    @autoload : true / false
+    @itemsToBeVisible: Defines how many items should be visible
+    @speed: Speed at which items will be passed in milliseconds
+    ----------------------------------------------------------*/
+const config = {
+  autoload: true,
+  itemsToBeVisible: 3,
+  speed: 3000
+};
+
+/*-------------------
+  Entry point 
+  ---------------------*/
+function start() {
+  window.onload = function () {
+    setSlidersStyle(config);
+
+    const prevSlideButton = document.getElementById("prev-slide");
+    const nextSlideButton = document.getElementById("next-slide");
+
+    prevSlideButton.addEventListener("click", () => {
+      navigate("backward", config);
+    });
+
+    nextSlideButton.addEventListener("click", () => {
+      navigate("forward", config);
+    });
+
+    if (config.autoload) {
+      playCarousel(nextSlideButton, config);
+    }
+  };
 }
 
-changeSlide();
-  
+/*--------------------------------------------------------------
+    Sets the style of slides based on the number of visible items.
+  ---------------------------------------------------------------*/
+function setSlidersStyle(config) {
+  document.querySelector(
+    "style"
+  ).textContent += `@media screen and (min-width:1180px) { .carousel__slide{ min-width: ${
+    100 / config.itemsToBeVisible
+  }% } }`;
+}
+
+/*----------------------------------------
+   Performs the sliding behavior of items.
+  ----------------------------------------*/
+function navigate(position, config) {
+  const carouselEl = document.getElementById("carousel");
+  const slideContainerEl = carouselEl.querySelector(".carousel__container");
+  const slideEl = carouselEl.querySelector(".carousel__slide");
+  let slideWidth = slideEl.offsetWidth;
+  slideContainerEl.scrollLeft = this.getNewScrollPosition(
+    position,
+    slideContainerEl,
+    slideWidth,
+    config
+  );
+}
+
+/*-------------------------------
+   Get the new scroll position.
+  ---------------------------------*/
+function getNewScrollPosition(position, slideContainerEl, slideWidth, config) {
+  const maxScrollLeft =
+    slideContainerEl.scrollWidth - slideWidth * config.itemsToBeVisible;
+  if (position === "forward") {
+    const x = slideContainerEl.scrollLeft + slideWidth;
+    return x <= maxScrollLeft ? x : 0;
+  } else {
+    const x = slideContainerEl.scrollLeft - slideWidth;
+    return x >= 0 ? x : maxScrollLeft;
+  }
+}
+
+/*-------------------------------
+  Autoplay
+  ---------------------------------*/
+function playCarousel(nextButton, config) {
+  const play = () => {
+    nextButton.click();
+    setTimeout(play, config.speed);
+  };
+  play();
+}
+
+start();        
+        
+        
+        
+        
+        
         
     </script>
 
