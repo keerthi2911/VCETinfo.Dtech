@@ -1073,3 +1073,19 @@ div{
 }
 
 
+.description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #e2dada;
+    margin-top: 5px;
+  }
+  
+  @media (max-width: 991px) {
+    
+    .description {
+      text-align: center;
+    }
+    .container1 .k{
+        padding-top: 2rem;
+    }
+  }
