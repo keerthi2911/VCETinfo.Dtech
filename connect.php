@@ -6,7 +6,11 @@
 	$message = $_POST['message'];
 
 	// Database connection
-$conn = new mysqli('sql6.freesqldatabase.com','sql6525760','yx7EVHzi6w');
+$servername = "sql6.freesqldatabase.com";
+$username = "sql6525760";
+$password = "yx7EVHzi6w";
+$db = "sql6525760";
+$conn = mysqli_connect($servername, $username, $password,$db);
 if($conn->connect_error){
 		// echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
