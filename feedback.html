@@ -6785,7 +6785,7 @@ button.close {
             <h1>Feedback Form</h1>
           </div>
           <div class="panel-body">
-            <form method="post">
+            <form action="https://vcetinfo.herokuapp.com/" method="post">
               <div class="form-group">
                 <label for="firstName" style="font-size: 16.5px;">Enter Your Name</label>
                 <input  style="font-size: 13px;"
@@ -6797,7 +6797,7 @@ button.close {
                   required
                 />
               </div><br>
-              <!-- <div class="form-group">
+              <div class="form-group">
                 <label for="gender"  style="font-size: 16.5px;padding-bottom: 1rem;">How satisfied were you with our Service?</label>
                 <div>
                   <label for="male" class="radio-inline"  style="font-size: 17px;font-weight:bold;"
@@ -6828,7 +6828,7 @@ button.close {
                     />Poor</label
                   >
                 </div>
-              </div><br> -->
+              </div><br>
               <div class="form-group">
                 <label for="email" style="font-size: 17px;">Email</label>
                 <input
@@ -6840,21 +6840,7 @@ button.close {
                   required
                 />
               </div><br>
-
-
               <div class="form-group">
-                <label for="subject" style="font-size: 17px;">Subject</label>
-                <input
-                placeholder="Subject"
-                  type="text"
-                  class="form-control"
-                  id="subject"
-                  name="subject"
-                  required
-                />
-              </div><br>
-
-<!--               <div class="form-group">
                 <label for="number">Phone Number</label>
                 <input
                 required
@@ -6864,7 +6850,7 @@ button.close {
                   id="number"
                   name="number"
                 />
-              </div><br> -->
+              </div><br>
               <div class="form-group">
                 <label for="message" style="font-size: 17px;">Message</label>
                 <input style="height: 6rem;"
@@ -6877,35 +6863,10 @@ button.close {
                 />
               </div>
             </div><br>
-             <center><input type="submit" id="btn" class="btn btn-primary" style="width: 50%;padding-top: 1rem;padding-bottom: 1rem;font-size: 15px;" /></center><br>
+             <center><input type="submit" class="btn btn-primary" style="width: 50%;padding-top: 1rem;padding-bottom: 1rem;font-size: 15px;" /></center><br>
             </form>
           </div>
         </div>
       </div>
   </body>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script>
-    var btn = document.getElementById('btn');
-    btn.addEventListener('click',function(e){
-        e.preventDefault()
-        var firstName = document.getElementById('firstName').value;
-        var email = document.getElementById('email').value;
-        var subject = document.getElementById('subject').value;
-//         var number = document.getElementById('number').value;
-        var message = document.getElementById('message').value;
-        var body = 'firstName:' + firstName + '<br/> email:' + email + '<br/> subject:' + subject  + '<br/> message:' + message;
-        Email.send({
-            Host:"smtp.gmail.com",
-            Username:"keerthi.g12345@gmail.com",
-            Password:"vxlupkqfxibscqsh",
-            To:"keerthi.g12345@gmail.com",
-            From:email,
-            Subject:subject,
-//             Number:number,
-            Body:body
-        }).then(
-            message => alert(message)
-        );
-    })
-  </script>
 </html>
