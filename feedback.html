@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -6785,19 +6784,19 @@ button.close {
             <h1>Feedback Form</h1>
           </div>
           <div class="panel-body">
-            <form action="https://vcetinfo.herokuapp.com/" method="post">
+            <form id="form">
               <div class="form-group">
                 <label for="firstName" style="font-size: 16.5px;">Enter Your Name</label>
                 <input  style="font-size: 13px;"
                 placeholder="Please enter your name"
                   type="text"
                   class="form-control"
-                  id="firstName"
-                  name="firstName"
+                  id="from_name"
+                  name="from_name"
                   required
                 />
               </div><br>
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <label for="gender"  style="font-size: 16.5px;padding-bottom: 1rem;">How satisfied were you with our Service?</label>
                 <div>
                   <label for="male" class="radio-inline"  style="font-size: 17px;font-weight:bold;"
@@ -6828,18 +6827,32 @@ button.close {
                     />Poor</label
                   >
                 </div>
-              </div><br>
+              </div><br> -->
               <div class="form-group">
                 <label for="email" style="font-size: 17px;">Email</label>
                 <input
                 placeholder="example@gmail.com"
                   type="text"
                   class="form-control"
-                  id="email"
-                  name="email"
+                  id="email_id"
+                  name="email_id"
                   required
                 />
               </div><br>
+
+
+              <!-- <div class="form-group">
+                <label for="subject" style="font-size: 17px;">Subject</label>
+                <input
+                placeholder="Subject"
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  name="subject"
+                  required
+                />
+              </div><br> -->
+
               <div class="form-group">
                 <label for="number">Phone Number</label>
                 <input
@@ -6863,10 +6876,46 @@ button.close {
                 />
               </div>
             </div><br>
-             <center><input type="submit" class="btn btn-primary" style="width: 50%;padding-top: 1rem;padding-bottom: 1rem;font-size: 15px;" /></center><br>
+             <center><input type="submit" id="button" class="btn btn-primary" value="Send Email" style="width: 50%;padding-top: 1rem;padding-bottom: 1rem;font-size: 15px;" /></center><br>
             </form>
           </div>
         </div>
       </div>
+
+
+
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      
+      <script type="text/javascript">
+        emailjs.init('RQfvE3vi_VP3aSvxQ')
+      </script>
   </body>
+
+
+
+
+
+  <script>
+    const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_xev74me';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert("Thank You..! Your Feedback is Valuable to Us"); location.replace(document.referrer);
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+</script>
 </html>
